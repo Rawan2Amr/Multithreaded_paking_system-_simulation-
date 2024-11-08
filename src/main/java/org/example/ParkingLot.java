@@ -54,6 +54,7 @@ public class ParkingLot {
                 int departureTime = car.arrival + car.getParking_time(); // Time when this car leaves
                 mini = Math.min(mini, departureTime);}
         } else {
+            //l
             mini = 0;
         }
         return mini;
