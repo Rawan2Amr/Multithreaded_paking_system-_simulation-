@@ -2,9 +2,10 @@ package org.example;
 
 public class Car  extends Thread{
     public int order;
-    private int parking_time;
-    protected int arrival;
+    protected int parking_time;
+    public int arrival;
     private int gate;
+    protected int waiting_time;
     public Car(int o ,int p, int g, int a){
         order=o; parking_time=p; gate=g; arrival =a;
     }
@@ -25,6 +26,7 @@ public class Car  extends Thread{
         try {
 
             // Attempt to park in the parking lot
+
             Main.parkingLot.park(this);
 
             // Simulate the car being parked for the duration of parking time

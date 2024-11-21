@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Main {
     public static ParkingLot parkingLot =new ParkingLot();
     public static void main(String[] args) throws FileNotFoundException, InterruptedException {
-        File myFile = new File("D:\\study\\level5\\OS\\Multithreaded_paking_system-_simulation\\src\\parking");
+        File myFile = new File("D:\\study\\level5\\OS\\Multithreaded_paking_system\\src\\parking");
         Scanner myReader = new Scanner(myFile);
         List<Gate> gates= new ArrayList<>();
         Gate gate1= new Gate(1);
