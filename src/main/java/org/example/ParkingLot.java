@@ -16,7 +16,7 @@ public class ParkingLot {
     public void park(Car car) throws InterruptedException {
 
         synchronized (this){
-            System.out.println(car.order+" first leave: "+this.calcuate_min()+" arrive: "+car.arrival+ " : "+occupiedSpots);
+            //System.out.println(car.order+" first leave: "+this.calcuate_min()+" arrive: "+car.arrival+ " : "+occupiedSpots);
             if(this.calcuate_min()<car.arrival||occupiedSpots<totalSpots){
 
                 car.waiting_time  =0 ;
